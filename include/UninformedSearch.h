@@ -12,7 +12,7 @@ namespace cppai {
      * exists.
      */
     static std::vector<grapph::edge_t> breadthFirstSearch(
-        grapph::Graph, grapph::vertex_t, grapph:vertex_t
+        grapph::Graph&, grapph::vertex_t, grapph:vertex_t
     );
 
     /**
@@ -22,7 +22,7 @@ namespace cppai {
      * exists.
      */
     static std::vector<grapph::edge_t> depthFirstSearch(
-        grapph::Graph, grapph::vertex_t, grapph:vertex_t
+        grapph::Graph&, grapph::vertex_t, grapph:vertex_t
     );
 
     /**
@@ -32,7 +32,7 @@ namespace cppai {
      * exists.
      */
     static std::vector<grapph::edge_t> iterativeSearch(
-        grapph::Graph, grapph::vertex_t, grapph:vertex_t
+        grapph::Graph&, grapph::vertex_t, grapph:vertex_t
     );
 
     /**
@@ -42,9 +42,9 @@ namespace cppai {
      * std::invalid_argument if no path exists.
      */
     static std::vector<grapph::edge_t> biDirectionSearch(
-        grapph::Graph, grapph::vertex_t, grapph:vertex_t,
+        grapph::Graph&, grapph::vertex_t, grapph:vertex_t,
         std::vector<grapph::edge_t> (*)(
-            grapph::Graph, grapph::vertex_t, grapph:vertex_t
+            grapph::Graph&, grapph::vertex_t, grapph:vertex_t
         )
     );
 
